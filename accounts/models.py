@@ -14,7 +14,7 @@ class AccountsModel(models.Model):
     birth = models.DateField()
     region = models.CharField(default = "")
     city = models.CharField(default = "")
-    helps = models.ManyToManyField(HelpModel, null = True, blank = True, default = None)
+    helps = models.ManyToManyField(HelpModel, blank = True, default = None)
     
     
     def __str__(self) -> str:
